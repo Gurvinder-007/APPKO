@@ -35,20 +35,20 @@ public class ProfileDAO extends SQLiteOpenHelper {
     }
 
     // Validate user credentials
-    public boolean validateUser(String email, String password) {
+    public boolean validateUser(String name, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT * FROM " + TABLE_USERS + " WHERE email = ? AND password = ?";
+        String query = "SELECT * FROM " + TABLE_USERS + " WHERE name = ? AND password = ?";
         Cursor cursor = db.rawQuery(query, new String[]{email, password});
-
+        //initiate test code to check if it gets this far
         boolean userExists = cursor.getCount() > 0;
         cursor.close();
         return userExists;
     }
 
     // Get the role of the user (Student or Teacher)
-    public String getRole(String email) {
+    public String getRole(String name) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT role FROM " + TABLE_USERS + " WHERE email = ?";
+        String query = "SELECT role FROM " + TABLE_USERS + " WHERE name = ?";
         Cursor cursor = db.rawQuery(query, new String[]{email});
 
         String role = null;
@@ -59,4 +59,3 @@ public class ProfileDAO extends SQLiteOpenHelper {
         return role;
     }
 }
-
