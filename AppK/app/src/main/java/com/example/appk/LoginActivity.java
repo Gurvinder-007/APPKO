@@ -43,9 +43,9 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 // Check if the user exists in the database
-                if (profileDAO.validateUser(username, password)) {
+                if (profileDAO.validateUser(name, password)) {
                     // Get the role of the user
-                    String role = profileDAO.getRole(username);
+                    String role = profileDAO.getRole(name);
                     Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
 
                     // Redirect to the correct dashboard based on role
@@ -81,3 +81,4 @@ public class LoginActivity extends AppCompatActivity {
         return true;
     }
 }
+
