@@ -38,7 +38,7 @@ public class ProfileDAO extends SQLiteOpenHelper {
     public boolean validateUser(String name, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT * FROM " + TABLE_USERS + " WHERE name = ? AND password = ?";
-        Cursor cursor = db.rawQuery(query, new String[]{email, password});
+        Cursor cursor = db.rawQuery(query, new String[]{name, password});
         //initiate test code to check if it gets this far
         boolean userExists = cursor.getCount() > 0;
         cursor.close();
@@ -49,7 +49,7 @@ public class ProfileDAO extends SQLiteOpenHelper {
     public String getRole(String name) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT role FROM " + TABLE_USERS + " WHERE name = ?";
-        Cursor cursor = db.rawQuery(query, new String[]{email});
+        Cursor cursor = db.rawQuery(query, new String[]{name});
 
         String role = null;
         if (cursor.moveToFirst()) {

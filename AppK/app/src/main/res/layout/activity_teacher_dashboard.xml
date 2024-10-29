@@ -1,50 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_gradient">
 
+    <!-- Title for the Teacher Dashboard -->
     <TextView
-        android:id="@+id/teacherNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, [Teacher Name]"
-        android:textSize="20sp"
-        android:layout_gravity="center"
+        android:text="Teacher Dashboard"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
         android:gravity="center" />
 
-    <TextView
-        android:id="@+id/totalStudentsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Students: 0"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center"
-        android:textSize="16sp" />
-
+    <!-- Button for Creating Activity -->
     <Button
-        android:id="@+id/addActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Activity"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/manageClassesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Manage Classes"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp" />
-
-    <!-- Class List Section -->
-    <ListView
-        android:id="@+id/classListView"
+        android:id="@+id/btnCreateActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:text="Create Activity"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Button for Reviewing Submissions -->
+    <Button
+        android:id="@+id/btnReviewSubmissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review Submissions"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Button for Giving Feedback -->
+    <Button
+        android:id="@+id/btnGiveFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Feedback"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Button for Viewing Feedback -->
+    <Button
+        android:id="@+id/btnViewFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Feedback"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
 </LinearLayout>
+
+
 

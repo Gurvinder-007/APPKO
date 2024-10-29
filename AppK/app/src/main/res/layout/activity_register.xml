@@ -1,64 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/background_gradient">
 
-    <!-- Name Field -->
+    <!-- Title for the registration page -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <!-- Full Name input field -->
     <EditText
         android:id="@+id/registerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Full Name"
-        android:inputType="textPersonName" />
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
 
-    <!-- Email Field -->
+    <!-- Email input field -->
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="8dp" />
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD"
+        android:layout_marginTop="12dp" />
 
-    <!-- Password Field -->
+    <!-- Password input field -->
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Password"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginTop="8dp" />
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD"
+        android:layout_marginTop="12dp" />
 
-    <!-- Role Selection (Teacher or Student) -->
-    <RadioGroup
-        android:id="@+id/radioGroupRole"
+    <!-- Teacher code input field (hidden by default) -->
+    <EditText
+        android:id="@+id/teacherCodeField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:hint="Enter Teacher Code"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
 
-        <RadioButton
-            android:id="@+id/radioStudent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Student" />
-
-        <RadioButton
-            android:id="@+id/radioTeacher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Teacher" />
-    </RadioGroup>
-
-    <!-- Register Button -->
-    <Button
-        android:id="@+id/registerButton"
+    <!-- Role selection Radio Buttons -->
+    <RadioButton
+        android:id="@+id/radioTeacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp" />
+
+    <RadioButton
+        android:id="@+id/radioStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <!-- Register button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="12dp" />
 
 </LinearLayout>
 

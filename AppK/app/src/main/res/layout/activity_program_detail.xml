@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"> <!-- Apply the background gradient -->
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/white"/> <!-- Change color as needed -->
+
+    <!-- Program Name -->
+    <TextView
+        android:id="@+id/programNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/white"/> <!-- Change color as needed -->
+
+    <!-- Program Description -->
+    <TextView
+        android:id="@+id/programDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program Description"
+        android:textSize="16sp"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/white"/> <!-- Change color as needed -->
+
+    <!-- Task List -->
+    <ListView
+        android:id="@+id/taskListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"/> <!-- Adjust divider as needed -->
+
+    <!-- Button Example -->
+    <Button
+        android:id="@+id/exampleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example Button"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText Example -->
+    <EditText
+        android:id="@+id/exampleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example Input"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+

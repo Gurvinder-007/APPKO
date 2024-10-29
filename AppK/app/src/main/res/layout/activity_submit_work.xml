@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"> <!-- Apply the background gradient -->
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Your Work"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/white"/> <!-- Change color as needed -->
+
+    <!-- Text input for submission details -->
+    <EditText
+        android:id="@+id/submission_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your submission details"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="8dp"
+        android:background="@drawable/rounded_edittext" /> <!-- Use the rounded edit text background -->
+
+    <!-- Button to select an image -->
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background" /> <!-- Apply button background -->
+
+    <!-- ImageView to display the selected image -->
+    <ImageView
+        android:id="@+id/submission_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerCrop"
+        android:background="@color/image_placeholder_background" /> <!-- Background for image placeholder -->
+
+    <!-- Button to submit the work -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_secondary" /> <!-- Apply secondary button background -->
+
+</LinearLayout>
+
+

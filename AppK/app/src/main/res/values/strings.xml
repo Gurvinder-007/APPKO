@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppK</string>
+    <string name="submission_image" />
 </resources>

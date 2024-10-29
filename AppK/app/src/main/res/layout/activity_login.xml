@@ -3,25 +3,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background_gradient">
 
-    <!-- Username EditText -->
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Komodo Hub Classroom"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+    <!-- Username Field -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:inputType="text"
-        android:layout_marginBottom="16dp" />
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
 
-    <!-- Password EditText -->
+    <!-- Password Field -->
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginBottom="16dp" />
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDDDDD" />
 
     <!-- Login Button -->
     <Button
@@ -29,14 +52,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
 
     <!-- Register Button -->
     <Button
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register" />
-
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background_secondary"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
 </LinearLayout>
 

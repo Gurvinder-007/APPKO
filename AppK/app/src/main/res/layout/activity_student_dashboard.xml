@@ -1,69 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_gradient">
 
-    <!-- Student Info Section -->
-    <ImageView
-        android:id="@+id/avatarImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:layout_gravity="center" />
-
+    <!-- Title for the Student Dashboard -->
     <TextView
-        android:id="@+id/studentNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Name"
-        android:textSize="18sp"
+        android:text="Student Dashboard"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:layout_gravity="center"
-        android:paddingTop="8dp" />
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
 
-    <!-- Program Info -->
+    <!-- Instructions for Students -->
     <TextView
-        android:id="@+id/programNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Program"
+        android:text="Welcome! Here you can view your assigned activities, submit work, and check feedback from your teacher."
         android:textSize="16sp"
-        android:layout_gravity="center"
-        android:paddingTop="8dp" />
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp" />
 
-    <!-- Task Completion Progress -->
+    <!-- Display Student's Name -->
     <TextView
-        android:id="@+id/taskCompletionTextView"
+        android:id="@+id/student_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Task Completion: 0%"
-        android:textSize="14sp"
-        android:layout_gravity="center"
-        android:paddingTop="4dp" />
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
 
-    <!-- Program List -->
+    <!-- Display Feedback Text -->
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ListView for Assigned Activities -->
     <ListView
-        android:id="@+id/programListView"
+        android:id="@+id/assigned_activities"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp" />
-
-    <!-- Action Buttons -->
-    <Button
-        android:id="@+id/uploadSightingButton"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Sighting"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:layout_marginBottom="20dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp" />
 
+    <!-- Button to Submit Work -->
     <Button
-        android:id="@+id/completeTaskButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/submit_work_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Complete Task"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:text="Submit Work"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Button to Show Activities -->
+    <Button
+        android:id="@+id/show_activities_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Activities"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Button to View Feedback -->
+    <Button
+        android:id="@+id/view_feedback_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Feedback"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
 </LinearLayout>
+
+

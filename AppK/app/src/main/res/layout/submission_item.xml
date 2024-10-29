@@ -1,0 +1,27 @@
+<!-- res/layout/submission_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_edittext"> <!-- Apply rounded background for consistency -->
+
+    <TextView
+        android:id="@+id/submission_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submission details"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/> <!-- Change color as needed -->
+
+    <ImageView
+        android:id="@+id/submission_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Submission Image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/button_background_secondary"/> <!-- Optional styling for the image view -->
+
+</LinearLayout>
+

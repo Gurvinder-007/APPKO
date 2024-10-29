@@ -22,10 +22,22 @@
             </intent-filter>
         </activity>
 
-        <!-- Keep MainActivity, but remove its launcher intent -->
+        <activity android:name=".ManageClassesActivity"
+            android:label="Manage Classes">
+        </activity>
+        <activity android:name=".SubmitWorkActivity"/>
+        <activity android:name=".AssignClassActivity" />
+        <activity android:name=".ProgramDetailActivity" />
+        <activity android:name=".ReviewSubmissionActivity"/>
+        <activity android:name=".TeacherDashboardActivity"/>
+        <activity android:name=".StudentDashboardActivity"/>
+        <activity android:name=".CreateActivity" />
         <activity android:name=".MainActivity" />
-
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".ShowActivitiesActivity"/>
+        <activity android:name=".ViewFeedbackActivity"/>
+        <activity android:name=".FeedbackActivity"/>
+
     </application>
 
 </manifest>

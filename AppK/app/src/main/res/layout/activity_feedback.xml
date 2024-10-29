@@ -7,61 +7,55 @@
     android:gravity="center_horizontal"
     android:background="@drawable/background_gradient">
 
-    <!-- Title for Manage Classes Screen -->
+    <!-- Title for Submit Feedback Screen -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manage Classes"
+        android:text="Submit Feedback"
         android:textSize="24sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginBottom="16dp"
         android:gravity="center" />
 
-    <!-- Input field for class name -->
+    <!-- Input Field for Student Name -->
     <EditText
-        android:id="@+id/classNameEditText"
+        android:id="@+id/student_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter class name"
+        android:hint="Student Name"
         android:padding="12dp"
         android:backgroundTint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textColorHint="#000000"
         android:textSize="16sp"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="16dp" />
 
-    <!-- Button to add a class -->
-    <Button
-        android:id="@+id/addClassButton"
+    <!-- Input Field for Feedback Text -->
+    <EditText
+        android:id="@+id/feedback_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Class"
+        android:hint="Feedback"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Submit Feedback Button -->
+    <Button
+        android:id="@+id/submit_feedback_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
         android:backgroundTint="#FFA726"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:padding="12dp"
-        android:layout_marginBottom="16dp" />
-
-    <!-- TextView for instructions -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Current Classes:"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:gravity="center_horizontal" />
-
-    <!-- List of classes -->
-    <ListView
-        android:id="@+id/classesListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@android:color/white"
-        android:dividerHeight="1dp"
-        android:padding="8dp" />
-
+        android:layout_marginTop="10dp" />
 </LinearLayout>
-
 
